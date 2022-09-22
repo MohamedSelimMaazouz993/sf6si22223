@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Détails personne
+{% endblock %}
+
+{% block pageTitle %}
+    Bienvenu {{ personne.name }}
+{% endblock %}
+{% block body %}
+ {{ include('personne/details-personne-fragment.html.twig', {personne: personne}) }}
+{% endblock %}
+
+
